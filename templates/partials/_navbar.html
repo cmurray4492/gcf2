@@ -1,0 +1,29 @@
+{% load static %}
+<nav class="logo" >  
+  <div class="logo">
+  <h3 class="nav_h3" >Southern Rosary Works</h3>
+    {% comment %} <img src="{% static 'img/tblogo.jpg' %}" alt="Talent Database Logo" />
+  </div> {% endcomment %}
+  <ul>
+    <li {% if '/' == request.path %} class="bilbo menu-active" {% else %} class="bilbo" {% endif %}><a
+        href="{% url 'index' %}">Home</a></li>
+    <li {% if 'blog' in request.path %} class="bilbo menu-active" {% else %} class="bilbo" {% endif %}><a
+        href="#">Blog</a></li>
+    <li {% if 'about' in request.path %} class="bilbo menu-active" {% else %} class="bilbo" {% endif %}><a
+        href="{% url 'about' %}">About</a></li>
+    <li {% if 'services' in request.path %} class="bilbo menu-active" {% else %} class="bilbo" {% endif %}><a
+        href="#">Rosaries</a></li>
+    <li {% if 'services' in request.path %} class="bilbo menu-active" {% else %} class="bilbo" {% endif %}><a
+        href="#">Prayers</a></li>    
+    <li {% if 'services' in request.path %} class="bilbo menu-active" {% else %} class="bilbo" {% endif %}><a
+        href="#">Churches</a></li>
+    <li {% if 'contactus' in request.path %} class="bilbo menu-active" {% else %} class="bilbo" {% endif %}><a
+        href="#">Contact Us</a></li>
+    <li {% if 'usefulinfo' in request.path %} class="bilbo menu-active" {% else %} class="bilbo" {% endif %}><a
+        href="#">Useful Information</a></li>
+  </ul>
+  <hr>
+  <div class="menu-footer" >
+  <p>Southern Rosary Works - Quality Durable Rosaries</p>
+</div>
+</nav>
