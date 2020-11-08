@@ -20,6 +20,8 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
     'django.contrib.admin',
     'pages.apps.PagesConfig',
+    'gcfblog.apps.GcfblogConfig',
+    'tinymce',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
@@ -114,7 +116,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
 
 
-"""
+
 TINYMCE_DEFAULT_CONFIG = {
     'width': 850,
     'height': 250,
@@ -143,4 +145,3 @@ TINYMCE_DEFAULT_CONFIG = {
     'menubar': True,
     'statusbar': True,
 }
-"""

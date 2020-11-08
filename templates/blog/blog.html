@@ -1,0 +1,71 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block description %}HR Data Science blog with a foucs of how one person went about trying to learn how apply data science to human resources{% endblock %}
+
+{% block keywords %}hr data science, human resources blog, learning to program computers, sphr, phr, hr tech {% endblock %}
+
+{% block title %}Blog Home | {% endblock %}
+
+{% block content %}
+
+</header>
+ 
+<div class="section group blog-image">
+	<div class="col span_12_of_12">
+		<img src="{% static 'img/srw_blog_home_banner.jpg' %}" class="blog-image" alt="Southern Rosary Works Blog Banner" width="100%"
+			max-height="15%">
+	</div>
+</div>
+
+<div class="section group">
+	<div class="col span_1_of_12"></div>
+	<div class="col span_8_of_12">
+		<ul class="breadcrumb">
+			<li><a href="{% url 'index' %}">Home</a></li>
+			<li>Blog Home</li>
+		</ul>
+	</div>
+	<div class="col span_2_of_12"></div>
+	<div class="col span_1_of_12"></div>
+</div>
+
+
+<div class="section group">
+	<div class="col span_1_of_12"></div>
+	<div class="col span_8_of_12">
+		<h1>Southern Rosary Works Blog</h1>
+		<p>Should add some more test here describe this blog and waht we are trying to do with it. </p>
+	</div>
+	<div class="col span_2_of_12"></div>
+	<div class="col span_1_of_12"></div>
+</div>
+
+<div class="section group">
+	<div class="col span_1_of_12"></div>
+	{% if blogs %}
+	{% for blog in blogs%}
+	<div class="col span_3_of_12">
+		<div class="card" style="width: 100%;">
+			<img src="{{ blog.blog_card_image.url }}" class="card-img-top" style="width: 100%;"" alt="{{ blog.blog_title }}">
+			<div class="card-body">
+				<h3 class="card-title">{{ blog.blog_title }}</h3>
+				<p class="card-text">{{ blog.blog_description }}</p>
+				<a href="{% url 'blogarticle' blog.id blog.blog_slug %}" class="btncdm btn-full btn-card">Read Blog Article</a>
+			</div>
+		</div>
+	</div>
+	{% endfor %}
+	{% else %}
+		<p>There are no blogs loaded</p>
+	{% endif %}
+	<div class="col span_2_of_12"></div>
+	<div class="col span_1_of_12"></div>
+</div>
+<br><br>
+{% endblock %}
+
+
+
+
+
+   

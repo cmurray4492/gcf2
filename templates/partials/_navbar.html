@@ -8,7 +8,7 @@
     <li {% if '/' == request.path %} class="bilbo menu-active" {% else %} class="bilbo" {% endif %}><a
         href="{% url 'index' %}">Home</a></li>
     <li {% if 'blog' in request.path %} class="bilbo menu-active" {% else %} class="bilbo" {% endif %}><a
-        href="#">Blog</a></li>
+        href="{% url 'blog' %}">Blog</a></li>
     <li {% if 'about' in request.path %} class="bilbo menu-active" {% else %} class="bilbo" {% endif %}><a
         href="{% url 'about' %}">About</a></li>
     <li {% if 'services' in request.path %} class="bilbo menu-active" {% else %} class="bilbo" {% endif %}><a

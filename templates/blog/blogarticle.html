@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+
+{% block description %}{{ blogarticle.blog_description }}{% endblock %}
+
+{% block keywords %} {{ blogarticle.blog_tags }} {% endblock %}
+
+{% block title %}{{ blogarticle.blog_title }} | {% endblock %}
+
+{% block content %}
+</header>
+<div class="section group blog-image">
+	<div class="col span_12_of_12">
+		<img src="{{ blogarticle.blog_image.url }}" class="blog-image" alt="{{ blogarticle.blog_title }}" width="100%"
+			max-height="15%"></div>
+</div>
+
+<div class="section group">
+	<div class="col span_1_of_12"></div>
+	<div class="col span_8_of_12">
+		<ul class="breadcrumb">
+			<li><a href="{% url 'index' %}">Home</a></li>
+			<li><a href="{% url 'blog' %}">Blog Home</a></li>
+			<li>{{ blogarticle.blog_title }}</li>
+		</ul>
+	</div>
+	<div class="col span_2_of_12"></div>
+	<div class="col span_1_of_12"></div>
+</div>
+
+<div class="section group">
+	<div class="col span_1_of_12"></div>
+	<div class="col span_8_of_12">
+		<h1>{{ blogarticle.blog_title }}</h1>
+		<h2></h2>
+		<p>
+		{{ blogarticle.blog_article | safe }}
+		</p>
+	</div>
+	<div class="col span_2_of_12">
+		<h3 class="h3Sidebar" >Article Tags</h3>
+		<p class="pSidebar" >{{ blogarticle.blog_tags }}</p>
+		<h4 class="h3Sidebar" >Author</h4>
+		<p class="pSidebar" >{{ blogarticle.blog_author }}</p>
+		<h4 class="h3Sidebar" >Date Posted</h4>
+		<p class="pSidebar" >{{ blogarticle.blog_date_posted }}</p>
+
+	</div>
+	<div class="col span_1_of_12"></div>
+</div>
+
+{% endblock %}
