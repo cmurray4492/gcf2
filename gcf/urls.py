@@ -13,9 +13,6 @@ urlpatterns = [
 """
 urlpatterns = [
     path('tinymce/', include('tinymce.urls')),
-
-
     path('chruches/', include('chruches.urls')),
     path('prayers/', include('prayers.urls')),
-] 
-""" 
+"""

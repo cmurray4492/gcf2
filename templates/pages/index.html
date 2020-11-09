@@ -1,13 +1,20 @@
 {% extends 'base1.html' %}
 
-{% block description %}This will be the ABOUT page description{% endblock %}">
-{% block keywords %}This will be the ABOUT page keywords{% endblock %}">
-{% block title %}About Us{% endblock %} 
+{% block description %}This will be the HOME page description{% endblock %}">
+{% block keywords %}This will be the HOME page keywords{% endblock %}">
+{% block title %}Home {% endblock %} 
 
 {% block content %}
 
-    <h1>Home - God Country Family</h1>
-    <p>Test CDM</p>
+<div class="section group">
+	<div class="col span_1_of_12"></div>
+	<div class="col span_8_of_12">
+        <h1>God Country Family</h1>
+        <p>This should a few sentences on what we are trying to do.</p>
+    </div>
+	<div class="col span_2_of_12"></div>
+	<div class="col span_1_of_12"></div>
+</div>
 
 {% endblock %}
 
