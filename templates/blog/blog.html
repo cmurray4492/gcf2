@@ -12,7 +12,7 @@
  
 <div class="section group blog-image">
 	<div class="col span_12_of_12">
-		<img src="{% static 'img/srw_blog_home_banner.jpg' %}" class="blog-image" alt="Southern Rosary Works Blog Banner" width="100%"
+		<img src="{% static 'img/lakebanner1.jpg' %}" class="blog-image" alt="Southern Rosary Works Blog Banner" width="100%"
 			max-height="15%">
 	</div>
 </div>
@@ -33,7 +33,7 @@
 <div class="section group">
 	<div class="col span_1_of_12"></div>
 	<div class="col span_8_of_12">
-		<h1>Southern Rosary Works Blog</h1>
+		<h1>God Country Family Blog</h1>
 		<p>Should add some more test here describe this blog and waht we are trying to do with it. </p>
 	</div>
 	<div class="col span_2_of_12"></div>
@@ -48,9 +48,10 @@
 		<div class="card" style="width: 100%;">
 			<img src="{{ blog.blog_card_image.url }}" class="card-img-top" style="width: 100%;"" alt="{{ blog.blog_title }}">
 			<div class="card-body">
-				<h3 class="card-title">{{ blog.blog_title }}</h3>
+				<h2 class="card-title">{{ blog.blog_title }}</h2>
+				<h3 class="card-title">{{ blog.blog_subtitle }}</h3>
 				<p class="card-text">{{ blog.blog_description }}</p>
-				<a href="{% url 'blogarticle' blog.id blog.blog_slug %}" class="btncdm btn-full btn-card">Read Blog Article</a>
+				<a href="{% url 'blogarticle' blog.id blog.blog_slug %}" class="btncdm btn-full btn-card">Read More ...</a>
 			</div>
 		</div>
 	</div>

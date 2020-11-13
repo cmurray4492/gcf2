@@ -11,12 +11,6 @@
         href="{% url 'blog' %}">Blog</a></li>
     <li {% if 'about' in request.path %} class="bilbo menu-active" {% else %} class="bilbo" {% endif %}><a
         href="{% url 'about' %}">About</a></li>
-    <li {% if 'services' in request.path %} class="bilbo menu-active" {% else %} class="bilbo" {% endif %}><a
-        href="#">Rosaries</a></li>
-    <li {% if 'services' in request.path %} class="bilbo menu-active" {% else %} class="bilbo" {% endif %}><a
-        href="#">Prayers</a></li>    
-    <li {% if 'services' in request.path %} class="bilbo menu-active" {% else %} class="bilbo" {% endif %}><a
-        href="#">Churches</a></li>
     <li {% if 'contactus' in request.path %} class="bilbo menu-active" {% else %} class="bilbo" {% endif %}><a
         href="#">Contact Us</a></li>
     <li {% if 'usefulinfo' in request.path %} class="bilbo menu-active" {% else %} class="bilbo" {% endif %}><a
