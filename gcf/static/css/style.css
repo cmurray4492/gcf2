@@ -59,7 +59,8 @@ Oswald */
 }
 @media only screen and (max-width: 992px) {
   .col {
-    margin: 1% 0;
+    margin: 1% 1%;
+    padding: 1% 1%;
   }
   .span_1_of_12,
   .span_2_of_12,
@@ -73,7 +74,7 @@ Oswald */
   .span_10_of_12,
   .span_11_of_12,
   .span_12_of_12 {
-    width: 100%;
+    width: 96%;
   }
 }
 body {
@@ -97,6 +98,12 @@ h6 {
   font-weight: 400;
   color: #0505ff;
 }
+
+.h1blog {
+  margin: 0;
+  padding: 0;
+}
+
 p {
   text-align: justify;
   font-family: Montserrat, sans-serif;
@@ -389,7 +396,6 @@ ul.breadcrumb li a:hover {
   text-decoration: underline;
 }
 
-
 .bilbo {
   font-weight: 200;
 }
@@ -568,7 +574,6 @@ ul.breadcrumb li a:hover {
 .card-columns .card {
   margin-bottom: 0.75rem;
 }
-
 
 .btncdm {
   display: inline-block;
