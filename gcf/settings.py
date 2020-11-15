@@ -11,7 +11,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = '56$#tjj8u$!+p0^z$9j10zaxyzo#%of26e*!&da-u@h2_poi1='
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = []
 
@@ -145,3 +145,8 @@ TINYMCE_DEFAULT_CONFIG = {
     'menubar': True,
     'statusbar': True,
 }
+
+try:
+    from .local_settings import *
+except ImportError:
+    print("Looks like no local settings file. You are in Production")
