@@ -370,9 +370,6 @@ nav ul li a:hover {
   padding: 0;
 }
 
-.sitemap_item {
-  align-self: center;
-}
 ul.breadcrumb {
   padding: 5px 8px;
   list-style: none;
@@ -593,7 +590,7 @@ ul.breadcrumb li a:hover {
 .btn-card {
   margin: 0;
   left: 50%;
-
+}
 
 .btn-full:hover {
   background-color: #fff;
@@ -615,7 +612,6 @@ ul.breadcrumb li a:hover {
   transition: background-color 0.8s;
 }
 
-
 .h3Sidebar {
   padding: 0%;
   margin: 0%;
@@ -624,4 +620,23 @@ ul.breadcrumb li a:hover {
 .pSidebar {
   padding-top: 0%;
   margin-top: 0%;
+}
+
+.sitemap_heading f5 {
+  color: white;
+}
+
+.sitemap_item {
+  align-self: center;
+  font-size: 75%;
+  color: white;
+}
+
+.footer1 {
+  font-size: 75%;
+}
+
+.footer {
+  font-size: 75%;
+  max-height: 10%;
 }
