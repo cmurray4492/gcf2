@@ -1,22 +1,38 @@
 {% extends 'base1.html' %}
 
-{% block description %}This will be the HOME page description{% endblock %}">
-{% block keywords %}This will be the HOME page keywords{% endblock %}">
-{% block title %}Home {% endblock %} 
+{% block description %}Trying to ensure our conservative voices are heard in this liberal, socialist insanity; Trying to ensure our conservative voices are heard in this liberal, socialist insanity{% endblock %}">
+{% block keywords %}conservative Christain website, Catholic, bring people of faith together to affect change{% endblock %}>
+{% block title %}Home{% endblock %} 
 
 {% block content %}
 
+<!-- Homw Page Text Area -->
 <div class="section group">
 	<div class="col span_1_of_12"></div>
 	<div class="col span_8_of_12">
 		<br>
         <h1>God Country Family</h1>
 		<p>Welcome to God, Country, Family where want to push a Conservative Christian Agenda in all aspects of government and society. </p>
-		<p>Trying to ensure our conservative voices are heard in liberal, socialist insanity</p>
+		<br>
+		<p>Trying to ensure our conservative voices are heard in this liberal, socialist insanity</p>
     </div>
+	<div class="col span_2_of_12"></div>
+	<div class="col span_1_of_12"></div>
+</div>
+
+<!-- Home Page Button Area -->
+<div class="section group">
+	<div class="col span_1_of_12"></div>
+	<div class="col span_2_of_12">
+		<p><a class="btncdm btn-full" href="{% url 'blog' %}">GCF Blog</a></p>
+	</div>
+	<div class="col span_2_of_12"></div>
+	<div class="col span_2_of_12"></div>
+	<div class="col span_2_of_12"></div>
 	<div class="col span_2_of_12"></div>
 	<div class="col span_1_of_12"></div>
 </div>
 
 {% endblock %}
 
+<a class="btncdm btn-ghost" href="{% url 'blog' %}">GCF Blog</a>
