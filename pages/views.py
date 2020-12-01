@@ -7,3 +7,11 @@ def index(request):
 
 def about(request):
     return render(request, 'pages/about.html')
+
+
+def contactus(request):
+    return render(request, 'pages/contactus.html')
+
+
+def usefulinfo(request):
+    return render(request, 'pages/usefulinfo.html')
