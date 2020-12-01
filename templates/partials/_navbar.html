@@ -13,9 +13,9 @@
     <li {% if 'about' in request.path %} class="bilbo menu-active" {% else %} class="bilbo" {% endif %}><a
         href="{% url 'about' %}">About</a></li>
     <li {% if 'contactus' in request.path %} class="bilbo menu-active" {% else %} class="bilbo" {% endif %}><a
-        href="#">Contact Us</a></li>
+        href="{% url 'contactus' %}">Contact Us</a></li>
     <li {% if 'usefulinfo' in request.path %} class="bilbo menu-active" {% else %} class="bilbo" {% endif %}><a
-        href="#">Useful Information</a></li>
+        href="{% url 'usefulinfo' %}">Useful Information</a></li>
   </ul>
   <hr>
   <div class="menu-footer" >
