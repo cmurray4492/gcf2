@@ -7,7 +7,7 @@
 
 {% block title %}{{ blogarticle.blog_title }} | {% endblock %}
 
-{% block og_url %}{% urlhttps://www.godcountryfamily.org 'blogarticle' blog.id blog.blog_slug %}{% endblock %}
+{% block og_url %}{% url https://www.godcountryfamily.org 'blogarticle' blog.id blog.blog_slug %}{% endblock %}
 {% block og_type %}Article{% endblock %}
 {% block og_title %}{{ blogarticle.blog_title }}{% endblock %}
 {% block og_description %}{{ blogarticle.blog_description }}{% endblock %}
