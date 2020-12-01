@@ -7,6 +7,9 @@
 
 {% block title %}{{ blogarticle.blog_title }} | {% endblock %}
 
+
+{% block og_url %}https://www.godcountryfamily.org{{ request.get_full_path }}{% endblock %}
+
 {% block og_type %}Article{% endblock %}
 {% block og_title %}{{ blogarticle.blog_title }}{% endblock %}
 {% block og_description %}{{ blogarticle.blog_description }}{% endblock %}
