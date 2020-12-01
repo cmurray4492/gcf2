@@ -20,3 +20,14 @@
 {% block og_image_url %}  {% endblock %}
 
 
+{% block og_url %}{% url 'blogarticle' blog.id blog.blog_slug %}{% endblock %}
+
+
+https://www.godcountryfamily.org/blog/1/supreme-court-rules-against-cuomos-coronavirus-lim
+
+
+{% block og_url %}https://www.godcountryfamily.org{% url 'blogarticle' blog.id blog.blog_slug %}{% endblock %}
+{% block og_type %}Article{% endblock %}
+{% block og_title %}{{ blogarticle.blog_title }}{% endblock %}
+{% block og_description %}{{ blogarticle.blog_description }}{% endblock %}
+{% block og_image_url %}{{ blogarticle.blog_image.url }}{% endblock %}
