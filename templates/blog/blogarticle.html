@@ -7,6 +7,12 @@
 
 {% block title %}{{ blogarticle.blog_title }} | {% endblock %}
 
+{% block og_type %}Article{% endblock %}
+{% block og_title %}{{ blogarticle.blog_title }}{% endblock %}
+{% block og_description %}{{ blogarticle.blog_description }}{% endblock %}
+{% block og_image_url %}{{ blogarticle.blog_image.url }}{% endblock %}
+
+
 {% block content %}
 </header>
 <div class="section group blog-image">
