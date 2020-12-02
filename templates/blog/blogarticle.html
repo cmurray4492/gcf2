@@ -13,7 +13,11 @@
 {% block og_type %}Article{% endblock %}
 {% block og_title %}{{ blogarticle.blog_title }}{% endblock %}
 {% block og_description %}{{ blogarticle.blog_description }}{% endblock %}
-{% block og_image_url %}{{ blogarticle.blog_card_image.url }}{% endblock %}
+{% block og_image_url %}{{ blogarticle.blog_image.url }}{% endblock %}
+
+{% block twitter_title %}  {{ blogarticle.blog_title }} {% endblock %}
+{% block twitter_description %} {{ blogarticle.blog_description }} {% endblock %}
+{% block twitter_image %} {{ blogarticle.blog_image.url }} {% endblock %}
 
 
 {% block content %}
@@ -58,6 +62,8 @@
 	<div class="col span_1_of_12"></div>
 </div>
 
+<!-- 
 <p>URL of this page: {{ request.get_full_path }}</p>
+-->
 
 {% endblock %}
