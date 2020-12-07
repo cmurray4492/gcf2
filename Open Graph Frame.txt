@@ -27,6 +27,10 @@ ________________________________________________________________________________
 {% block og_description %}  {% endblock %}
 {% block og_image_url %}  {% endblock %}
 
+{% block twitter_title %} {% endblock %}
+{% block twitter_description %} {% endblock %}
+{% block twitter_image %} {% endblock %}
+
 __________________________________________________________________________________________
 
 
