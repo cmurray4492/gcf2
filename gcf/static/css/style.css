@@ -372,6 +372,8 @@ nav ul li a:hover {
 
 .bread {
   padding: 2px;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 ul.breadcrumb {
