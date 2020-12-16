@@ -370,6 +370,10 @@ nav ul li a:hover {
   padding: 0;
 }
 
+.bread {
+  padding: 2px;
+}
+
 ul.breadcrumb {
   padding: 5px 8px;
   list-style: none;
