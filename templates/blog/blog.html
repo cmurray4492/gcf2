@@ -48,10 +48,11 @@
 
 	<div class="section group">
 		<div class="col span_1_of_12"></div>
+		<div class="col span_3_of_12"> 
 			{% if blogs %}
 			{% for blog in blogs%}
-				<div class="col span_3_of_12"> 
-					<div class="card" style="width: 100%;">
+
+					<div class="card" style="width: 100%;"></div>
 						<img src="{{ blog.blog_card_image.url }}" class="card-img-top" style="width: 100%; height: 18rem;" alt="{{ blog.blog_title }}">
 						<div class="card-body">
 							<h2 class="card-title">{{ blog.blog_title }}</h2>
@@ -60,7 +61,7 @@
 							<a href="{% url 'blogarticle' blog.id blog.blog_slug %}" class="btncdm btn-full btn-card">Read More ...</a>
 						</div>
 					</div>
-				</div>
+		</div>
 		{% endfor %}
 		{% else %}
 		<div><p>There are no blogs loaded</p></div>
