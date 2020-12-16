@@ -46,27 +46,27 @@
 	</div>
 </div>
 
-<div class="section group">
-	<div class="col span_1_of_12"></div>
-	{% if blogs %}
-	{% for blog in blogs%}
-	<div class="col span_3_of_12"> 
-		<div class="card" style="width: 100%;">
-			<img src="{{ blog.blog_card_image.url }}" class="card-img-top" style="width: 100%; height: 18rem;" alt="{{ blog.blog_title }}">
-			<div class="card-body">
-				<h2 class="card-title">{{ blog.blog_title }}</h2>
-				<h3 class="card-title">{{ blog.blog_subtitle }}</h3>
-				<p class="card-text">{{ blog.blog_description }}</p>
-				<a href="{% url 'blogarticle' blog.id blog.blog_slug %}" class="btncdm btn-full btn-card">Read More ...</a>
-			</div>
+	<div class="section group">
+		<div class="col span_1_of_12"></div>
+			{% if blogs %}
+			{% for blog in blogs%}
+				<div class="col span_3_of_12"> 
+					<div class="card" style="width: 100%;">
+						<img src="{{ blog.blog_card_image.url }}" class="card-img-top" style="width: 100%; height: 18rem;" alt="{{ blog.blog_title }}">
+						<div class="card-body">
+							<h2 class="card-title">{{ blog.blog_title }}</h2>
+							<h3 class="card-title">{{ blog.blog_subtitle }}</h3>
+							<p class="card-text">{{ blog.blog_description }}</p>
+							<a href="{% url 'blogarticle' blog.id blog.blog_slug %}" class="btncdm btn-full btn-card">Read More ...</a>
+						</div>
+					</div>
+				</div>
 		</div>
+		{% endfor %}
+		{% else %}
+		<div><p>There are no blogs loaded</p></div>
+		{% endif %}
 	</div>
-	{% endfor %}
-	{% else %}
-		<p>There are no blogs loaded</p>
-	{% endif %}
-
-</div>
 <br><br>
 {% endblock %}
 
