@@ -640,3 +640,9 @@ ul.breadcrumb li a:hover {
   font-size: 75%;
   max-height: 10%;
 }
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
