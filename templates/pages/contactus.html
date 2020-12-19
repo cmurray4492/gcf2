@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% load static %}
 
 {% block description %}This will be the ABOUT page description{% endblock %}">
 {% block keywords %}This will be the ABOUT page keywords{% endblock %}">
@@ -16,6 +17,43 @@
 
 {% block content %}
 
-    <h1>Contact Us - God Country Family</h1>
+</header>
+
+<div class="section group blog-image">
+	<div class="col span_12_of_12">
+		<img src="{% static 'img/US_Flag_Banner.jpg' %}" class="blog-image" alt="Southern Rosary Works Blog Banner" width="100%"
+			max-height="15%">
+	</div>
+</div>
+
+<div class="section group">
+	<div class="col span_1_of_12"></div>
+	<div class="col span_8_of_12">
+        <h1>Contact Us - God Country Family</h1>
+        <p>Thank you for visiting God, Country, Family, and we lookk forward to hearing from you. </p>
+    </div>
+	<div class="col span_2_of_12"></div>
+	<div class="col span_1_of_12"></div>
+</div>
+
+<div class="section group">
+	<div class="col span_1_of_12"></div>
+	<div class="col span_8_of_12">
+        <p>The is where we will put the form</p>
+    </div>
+	<div class="col span_2_of_12"></div>
+	<div class="col span_1_of_12"></div>
+</div>
+
+<!--
+<div class="section group">
+	<div class="col span_1_of_12"></div>
+	<div class="col span_8_of_12"></div>
+	<div class="col span_2_of_12"></div>
+	<div class="col span_1_of_12"></div>
+</div>
+-->
+
+    
 
 {% endblock %}
