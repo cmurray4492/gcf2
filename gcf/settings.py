@@ -116,7 +116,6 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
 
 
-
 TINYMCE_DEFAULT_CONFIG = {
     'width': 850,
     'height': 250,
@@ -145,6 +144,12 @@ TINYMCE_DEFAULT_CONFIG = {
     'menubar': True,
     'statusbar': True,
 }
+
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'cypresscreekenergy@gmail.com'
+EMAIL_HOST_PASSWORD = 'Tadpole2329'
+EMAIL_USE_TLS = True
 
 try:
     from .local_settings import *
