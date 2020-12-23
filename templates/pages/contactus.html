@@ -31,14 +31,6 @@
 	<div class="col span_8_of_12">
         <h1>Contact Us - God Country Family</h1>
 		<p>Thank you for visiting God, Country, Family, and we look forward to hearing from you. Please use the form below to send us a message. We will respond appropriately as soon as we can.</p>
-    </div>
-	<div class="col span_2_of_12"></div>
-	<div class="col span_1_of_12"></div>
-</div>
-
-<div class="section group">
-	<div class="col span_1_of_12"></div>
-	<div class="col span_8_of_12">
 		<form action="{% url 'contactus' %}" method="post" class="contact_form">
 			{% csrf_token %}
 			<p>
@@ -59,16 +51,5 @@
 	<div class="col span_2_of_12"></div>
 	<div class="col span_1_of_12"></div>
 </div>
-
-<!--
-<div class="section group">
-	<div class="col span_1_of_12"></div>
-	<div class="col span_8_of_12"></div>
-	<div class="col span_2_of_12"></div>
-	<div class="col span_1_of_12"></div>
-</div>
--->
-
-    
 
 {% endblock %}
