@@ -19,11 +19,13 @@ ALLOWED_HOSTS = ['www.godcountryfamily.org']
 
 INSTALLED_APPS = [
     'django.contrib.admin',
+    'django.contrib.sites',
     'pages.apps.PagesConfig',
     'gcfblog.apps.GcfblogConfig',
     'tinymce',
     'django.contrib.auth',
     'django.contrib.contenttypes',
+    'django.contrib.sitemaps',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
@@ -115,6 +117,7 @@ STATICFILES_DIRS = [
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
 
+SITE_ID = 1
 
 TINYMCE_DEFAULT_CONFIG = {
     'width': 850,

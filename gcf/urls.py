@@ -12,7 +12,7 @@ urlpatterns = [
     path('blog/', include('gcfblog.urls')),
     path('ads.txt', RedirectView.as_view(url=staticfiles_storage.url("ads.txt"))),
     path('sitemap.xml', RedirectView.as_view(url=staticfiles_storage.url("sitemap.xml"))),
-] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+    ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 """
 urlpatterns = [
