@@ -14,6 +14,8 @@
         href="{% url 'about' %}">About</a></li>
     <li {% if 'contactus' in request.path %} class="bilbo menu-active" {% else %} class="bilbo" {% endif %}><a
         href="{% url 'contactus' %}">Contact Us</a></li>
+    <li {% if 'hdocs' in request.path %} class="bilbo menu-active" {% else %} class="bilbo" {% endif %}><a
+      href="{% url 'hdocs' %}">Hist Docs</a></li>
     <li {% if 'usefulinfo' in request.path %} class="bilbo menu-active" {% else %} class="bilbo" {% endif %}><a
         href="{% url 'usefulinfo' %}">Useful Information</a></li>
   </ul>

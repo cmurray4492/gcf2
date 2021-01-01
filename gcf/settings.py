@@ -22,6 +22,7 @@ INSTALLED_APPS = [
     'django.contrib.sites',
     'pages.apps.PagesConfig',
     'gcfblog.apps.GcfblogConfig',
+    'hdocs.apps.HdocsConfig',
     'tinymce',
     'django.contrib.auth',
     'django.contrib.contenttypes',
