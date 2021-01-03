@@ -16,10 +16,9 @@ DEBUG = False
 ALLOWED_HOSTS = ['www.godcountryfamily.org']
 
 # Application definition
-
+# django.contrib.sites',
 INSTALLED_APPS = [
     'django.contrib.admin',
-    'django.contrib.sites',
     'pages.apps.PagesConfig',
     'gcfblog.apps.GcfblogConfig',
     'hdocs.apps.HdocsConfig',
