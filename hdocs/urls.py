@@ -3,6 +3,7 @@ from . import views
 
 urlpatterns = [
     path('', views.hdocs, name="hdocs"),
+    path('declaration_of_independence', views.declaration_of_independence, name="declaration_of_independence"),
 ]
 
 #    path('about', views.about, name="about"),
