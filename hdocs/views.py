@@ -1,3 +1,4 @@
+# What is wrong here
 from django.shortcuts import render
 
 
@@ -14,4 +15,4 @@ def us_constitution(request):
 
 
 def us_bill_of_rights(request):
-    return render(request, 'hdocs/us_bill_of_rights')
+    return render(request, 'hdocs/us_bill_of_rights.html')
