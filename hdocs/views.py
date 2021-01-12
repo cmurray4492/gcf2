@@ -13,5 +13,5 @@ def us_constitution(request):
     return render(request, 'hdocs/us_constitution.html')
 
 
-def us_bill_of_right(request):
+def us_bill_of_rights(request):
     return render(request, 'hdocs/us_bill_of_rights')
