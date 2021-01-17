@@ -13,6 +13,7 @@ urlpatterns = [
     path('hdocs/', include('hdocs.urls')),
     path('ads.txt', RedirectView.as_view(url=staticfiles_storage.url("ads.txt"))),
     path('sitemap.xml', RedirectView.as_view(url=staticfiles_storage.url("sitemap.xml"))),
+    path('urllist.txt', RedirectView.as_view(url=staticfiles_storage.url("urllist.txt"))),
     ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 """
