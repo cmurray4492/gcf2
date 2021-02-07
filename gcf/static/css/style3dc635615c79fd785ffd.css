@@ -394,6 +394,7 @@ ul.breadcrumb li a:hover {
 }
 .card-set {
   display: flex;
+  flex-wrap: wrap;
   width: 100%;
 }
 .card > hr {
@@ -602,7 +603,6 @@ ul.breadcrumb li a:hover {
 }
 .row {
   display: flex;
-  flex-wrap: wrap;
   padding: 0 4px;
 }
 input {
