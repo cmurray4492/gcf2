@@ -394,7 +394,7 @@ ul.breadcrumb li a:hover {
 }
 .card-set {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   width: 100%;
 }
 .card > hr {
