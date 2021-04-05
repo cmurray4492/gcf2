@@ -1,1 +1,1 @@
-c:\dev\gcf_project\venv\Scripts\activate.bat
+c:\dev\Web\gcf_project\venv\Scripts\activate.bat
